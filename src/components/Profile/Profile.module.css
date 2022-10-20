@@ -1,0 +1,47 @@
+.profile {
+  width: 300px;
+  height: 400px;
+
+  overflow: hidden;
+
+  font-size: 14px;
+
+  border: 1px solid #c1c1c1;
+  border-radius: 10px;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+
+  height: 300px;
+
+  padding-top: 50px;
+
+  background-color: #ffffff;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+
+  margin-bottom: 30px;
+
+  border-radius: 50%;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.tag {
+  color: #aaadad;
+}
+
+.location {
+  font-size: 18px;
+  color: #aaadad;
+}
