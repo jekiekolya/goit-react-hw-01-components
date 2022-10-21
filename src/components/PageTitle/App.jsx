@@ -1,23 +1,14 @@
 // import { Children } from "react";
+import { Container } from './App.styled';
+import { Box } from './Box';
 
-
-export const App = ({children}) => {
+export const App = ({ children }) => {
   return (
-    <div
-      style={{
-        // height: '100vh',
-        display: 'flex',
-        flexDirection: "column",
-        justifyContent: 'center',
-        alignItems: 'center',
-        gap: 30,
-        marginBottom: 100,
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-      {children}
-    </div>
+    <Box bg="mainBg" color="text">
+      <Container>
+        React homework template
+        {children}
+      </Container>
+    </Box>
   );
 };

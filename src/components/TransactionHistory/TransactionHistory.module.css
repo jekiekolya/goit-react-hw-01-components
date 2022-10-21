@@ -15,9 +15,6 @@
   background-color: #00bcd5;
 }
 
-.table_header_row {
-}
-
 .table_body {
   text-align: center;
   color: #767676;
@@ -25,6 +22,10 @@
 
 .table_body tr {
   height: 50px;
+}
+
+.table_body tr {
+  background-color: #ffffff;
 }
 
 .table_body tr:nth-child(2n) {
