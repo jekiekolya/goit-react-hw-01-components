@@ -34,10 +34,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       </Profile>
       <div>Ex-2</div>
       <Statistics title="Upload stats" stats={data} />
-      {/* <div>Ex-3</div>
+      <div>Ex-3</div>
       <FriendList friends={friends} />
       <div>Ex-4</div>
-      <TransactionHistory items={transactions} /> */}
+      <TransactionHistory items={transactions} />
     </App>
   </React.StrictMode>
 );
