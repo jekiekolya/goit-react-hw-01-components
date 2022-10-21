@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import css from './Statistics.module.css';
 
 export const Statistics = ({ title, stats }) => {
@@ -16,6 +17,11 @@ export const Statistics = ({ title, stats }) => {
     </section>
   );
 };
+
+Statistics.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.arrayOf(PropTypes.object),
+}
 
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)

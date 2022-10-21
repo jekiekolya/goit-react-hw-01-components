@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import css from "./UserStats.module.css";
 
 export const UserStats = ({followers, views, likes}) => {
@@ -15,4 +16,10 @@ export const UserStats = ({followers, views, likes}) => {
       <span className={css.quantity}>{likes}</span>
     </li>
   </ul>)
+}
+
+UserStats.propTypes = {
+  followers: PropTypes.number,
+  views: PropTypes.number,
+  likes: PropTypes.number
 }
