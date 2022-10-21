@@ -19,7 +19,7 @@ export const UserStats = ({followers, views, likes}) => {
 }
 
 UserStats.propTypes = {
-  followers: PropTypes.number,
-  views: PropTypes.number,
-  likes: PropTypes.number
+  followers: PropTypes.number.isRequired,
+  views: PropTypes.number.isRequired,
+  likes: PropTypes.number.isRequired
 }
