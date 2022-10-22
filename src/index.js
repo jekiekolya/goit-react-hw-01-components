@@ -9,7 +9,7 @@ import { theme } from './constants';
 import './index.css';
 import { App } from 'components/PageTitle/App';
 import { Profile } from './components/Profile/Profile';
-import { UserStats } from './components/Profile/UserStats/UserStats';
+
 import { Statistics } from './components/Statistics/Statistics';
 import { FriendList } from './components/FriendList/FriendList';
 import { TransactionHistory } from './components/TransactionHistory/TransactionHistory';
@@ -30,13 +30,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           tag={user.tag}
           location={user.location}
           avatar={user.avatar}
-        >
-          <UserStats
-            followers={user.stats.followers}
-            views={user.stats.views}
-            likes={user.stats.likes}
-          />
-        </Profile>
+          stats={user.stats}
+        ></Profile>
         <div>Ex-2</div>
         <Statistics title="Upload stats" stats={data} />
         <div>Ex-3</div>

@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types'
-import {Container, Description, UserName, Avatar, Tag, Location} from './Profile.styled'
+import { Container, Description, UserName, Avatar, Tag, Location } from './Profile.styled'
+import { UserStats } from './UserStats/UserStats';
 
-export const Profile = ({ username, tag, location, avatar, children }) => {
+export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
     <Container>
       <Description >
@@ -10,7 +11,11 @@ export const Profile = ({ username, tag, location, avatar, children }) => {
         <Tag>@{tag}</Tag>
         <Location>{location}</Location>
           </Description>
-          {children}
+          <UserStats
+            followers={stats.followers}
+            views={stats.views}
+            likes={stats.likes}
+          />
     </Container>
   );
 };
