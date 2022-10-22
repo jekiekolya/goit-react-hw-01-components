@@ -6,7 +6,6 @@ export const App = ({ children }) => {
   return (
     <Box bg="mainBg" color="text">
       <Container>
-        React homework template
         {children}
       </Container>
     </Box>
