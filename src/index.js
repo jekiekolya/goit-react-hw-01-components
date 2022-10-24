@@ -7,38 +7,12 @@ import { theme } from './constants';
 
 // Import components
 import './index.css';
-import { App } from 'components/PageTitle/App';
-import { Profile } from './components/Profile/Profile';
-
-import { Statistics } from './components/Statistics/Statistics';
-import { FriendList } from './components/FriendList/FriendList';
-import { TransactionHistory } from './components/TransactionHistory/TransactionHistory';
-
-// Import data
-import user from './data/user.json';
-import data from './data/data.json';
-import friends from './data/friends.json';
-import transactions from './data/transactions.json';
+import { App } from './components/App';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-      <App>
-        <div>Ex-1</div>
-        <Profile
-          username={user.username}
-          tag={user.tag}
-          location={user.location}
-          avatar={user.avatar}
-          stats={user.stats}
-        ></Profile>
-        <div>Ex-2</div>
-        <Statistics title="Upload stats" stats={data} />
-        <div>Ex-3</div>
-        <FriendList friends={friends} />
-        <div>Ex-4</div>
-        <TransactionHistory items={transactions} />
-      </App>
+      <App></App>
     </ThemeProvider>
   </React.StrictMode>
 );
